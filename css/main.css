@@ -25,14 +25,15 @@ html {
   font-style: normal;
 }
 
-article {
-  margin: 0 2.2rem;
-}
-
 body {
   margin: 0;
   display: grid;
   gap: 1rem;
+}
+
+figure,
+article {
+  margin: 1.5rem;
 }
 
 img {
