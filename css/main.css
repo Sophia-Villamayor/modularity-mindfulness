@@ -27,13 +27,11 @@ html {
 
 body {
   margin: 0;
-  display: grid;
-  gap: 1rem;
 }
 
 figure,
 article {
-  margin: 1.5rem;
+  margin: 1.1rem;
 }
 
 img {
@@ -41,20 +39,24 @@ img {
   width: 100%;
 }
 
-header {
+header,
+.group {
   text-align: center;
 }
 
 .head {
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .gardens {
   margin: 0;
+  font-size: 1.125rem;
 }
 
 a {
   color: #3783a3;
+  font-size: 1.125rem;
 }
 
 ul {
@@ -76,15 +78,33 @@ li {
 
 .script {
   font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .description {
-  font-size: 1.125rem;
+  text-align: center;
+  width: 89%;
+  font-size: 1rem;
+  margin: .5rem 1rem 2rem;
+}
+
+hr {
+  color: #e2e2e2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 30em;
+}
+
+.view-pic {
+  margin-top: 1.7rem;
 }
 
 .title {
   font-weight: bold;
+  margin-top: 1.5rem;
   margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .viewing {
@@ -93,12 +113,43 @@ li {
 }
 
 .btn {
+  display: inline-block;
   text-decoration: none;
-  border: .2rem solid #e2e2e2;
+  border: .2rem solid #3783a3;
   border-radius: .3rem;
   padding: .5em 1em .6em;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+}
+
+.content {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 101%;
 }
 
 footer {
   text-align: center;
 }
+
+@media only screen and (min-width: 38em) {
+
+  body {
+
+  }
+
+  .group {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .banner,
+  nav {
+    display: inline-block;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+  }
