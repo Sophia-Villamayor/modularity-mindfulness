@@ -138,18 +138,8 @@ footer {
 
   }
 
-  .group {
-    display: inline-block;
-    text-align: left;
-  }
-
-  .banner,
-  nav {
-    display: inline-block;
-  }
-
+  header,
   ul {
     display: flex;
-    justify-content: space-around;
-    width: 55%;
+
   }
