@@ -138,8 +138,11 @@ footer {
 
   }
 
-  header,
+  .group {
+    display: inline-block;
+  }
+
   ul {
     display: flex;
-
+    width: 55%;
   }
