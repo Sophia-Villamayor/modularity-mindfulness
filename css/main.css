@@ -39,6 +39,11 @@ img {
   width: 100%;
 }
 
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 header,
 .group {
   text-align: center;
@@ -138,11 +143,18 @@ footer {
 
   }
 
+  header,
+  .group {
+    text-align: left;
+  }
+
   .group {
     display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   ul {
     display: flex;
-    width: 55%;
+    justify-content: flex-end;
   }
