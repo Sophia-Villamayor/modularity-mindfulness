@@ -112,7 +112,7 @@ hr {
   font-size: 1.5rem;
 }
 
-.viewing {
+.pic {
   font-weight: bold;
   margin: 0;
 }
@@ -139,6 +139,16 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article {
+    display: grid;
+    grid-column: 1 / 4;
+  }
+
   header,
   .group {
     text-align: left;
@@ -150,9 +160,36 @@ footer {
     flex-direction: column;
   }
 
-  nav {
+  ul {
     display: flex;
     justify-content: flex-end;
+  }
+
+  figure {
+    display: grid;
+  }
+
+  .viewing {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gravel {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .symbolism {
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  footer {
+    display: grid;
+    grid-column: -4 / -1;
   }
 
 }
