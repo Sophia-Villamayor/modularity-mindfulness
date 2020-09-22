@@ -139,10 +139,6 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
-  body {
-
-  }
-
   header,
   .group {
     text-align: left;
@@ -154,7 +150,9 @@ footer {
     flex-direction: column;
   }
 
-  ul {
+  nav {
     display: flex;
     justify-content: flex-end;
   }
+
+}
