@@ -112,7 +112,7 @@ hr {
   font-size: 1.5rem;
 }
 
-.pic {
+.sub-title {
   font-weight: bold;
   margin: 0;
 }
@@ -144,7 +144,8 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  article {
+  article,
+  main {
     display: grid;
     grid-column: 1 / 4;
   }
@@ -165,26 +166,43 @@ footer {
     justify-content: flex-end;
   }
 
+  .essence {
+    width: 83%;
+    margin-left: 3rem;
+  }
+
   figure {
     display: grid;
+  }
+
+  main {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  hr {
+    margin-bottom: 0;
   }
 
   .viewing {
     display: grid;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
+    margin: 0 0 0 1rem;
   }
 
   .gravel {
     display: grid;
     grid-column: 2;
     grid-row: 2;
+    margin: 0;
   }
 
   .symbolism {
     display: grid;
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 2;
+    margin: 0 1rem;
   }
 
   footer {
@@ -192,4 +210,20 @@ footer {
     grid-column: -4 / -1;
   }
 
+  .gravel-pic,
+  .view-pic {
+    margin-top: 0;
+  }
+
 }
+
+/*
+
+  .view-pic {
+    width: 93%;
+  }
+
+  .symbol-pic {
+    width: 83%;
+  }
+*/
