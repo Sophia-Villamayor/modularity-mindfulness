@@ -141,13 +141,20 @@ footer {
 
   body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   article,
   main {
     display: grid;
     grid-column: 1 / 4;
+  }
+
+  main {
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem;
+    align-items: flex-start;
   }
 
   header,
@@ -159,7 +166,6 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-
 
   .group {
     display: inline-block;
@@ -179,11 +185,6 @@ footer {
 
   figure {
     display: grid;
-  }
-
-  main {
-    align-items: flex-start;
-    gap: 1rem;
   }
 
   hr {
