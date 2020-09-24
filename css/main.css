@@ -165,12 +165,17 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
   }
 
   .group {
     display: inline-block;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  nav {
+    margin-top: 1rem;
   }
 
   nav ul {
@@ -189,6 +194,10 @@ footer {
   ul {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .ban-pic {
+    margin-bottom: 2rem;
   }
 
   .essence {
@@ -237,13 +246,20 @@ footer {
 
 }
 
-/*
+@media only screen and (min-width: 60em) {
 
-  .view-pic {
-    width: 93%;
+  .script {
+    width: 57%;
+    margin-left: 13rem;
   }
 
-  .symbol-pic {
-    width: 83%;
+  .description {
+    width: 60%;
+    margin-left: 12rem;
   }
-*/
+
+  .line {
+    margin-left: 12rem;
+  }
+
+}
